@@ -1,0 +1,78 @@
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+
+button{
+    position: relative;
+    left: 45%;
+    bottom: -2%;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+}
+
+
+button:hover{
+    position: relative;
+    left: 45%;
+    bottom: -2%;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    background-color: rgb(194, 255, 133);
+    border-radius: 10%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    margin-top: -4%;
+    position: relative;
+    flex-flow: wrap;
+    animation-name: fade-in;
+    animation-duration:5s
+
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+.dead{
+    color: red;
+}
+
+.alive{
+    color: rgb(94, 255, 0);
+}
+img{
+    border-radius: 50%;
+    border-color: yellowgreen;
+    border-style: solid;
+ margin:10px
+}
+
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 100;
+    }
+  }
+
+@media (max-width: 844px) {
+    button{
+        position: relative;
+        left: 33%;
+        bottom: -2%;
+        font-size: large;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border-radius: 10%;
+    }
+  }
