@@ -1,13 +1,10 @@
-.title{
-    display: flex;
-    justify-content: center;
+body{
+    scroll-behavior: smooth;
 }
-
-
 button{
     position: relative;
     left: 45%;
-    bottom: -2%;
+    bottom: 1%;
     font-size: large;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
@@ -28,11 +25,13 @@ button:hover{
     display: flex;
     justify-content: center;
     padding: 10%;
-    margin-top: -4%;
+    padding-top: 10px;
     position: relative;
     flex-flow: wrap;
     animation-name: fade-in;
-    animation-duration:5s
+    animation-duration:5s;
+    scroll-behavior: smooth;
+    
 
 }
 h3{
@@ -47,12 +46,71 @@ h3{
 .alive{
     color: rgb(94, 255, 0);
 }
-img{
+     
+.chars{
     border-radius: 50%;
     border-color: yellowgreen;
     border-style: solid;
- margin:10px
+    margin:10px;
 }
+
+.chars:hover{
+   
+    border-color:springgreen;
+    border-style:ridge;
+    opacity: 70%;
+    margin:10px
+}
+
+
+header {
+    
+    background-image:url("https://images.alphacoders.com/133/1330376.png");
+    background-position-y: 34%;
+    height: 250px;
+    width: 98%;
+    padding: 20px;
+    
+  }
+  
+
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    font-size:x-large;
+    margin: 150px;
+    margin-top: 1%
+
+    
+  }
+  
+  nav a {
+    color: #dad3d3;
+    text-decoration: none;
+    margin: 10px;
+  }
+
+ nav a:hover {
+    color:springgreen;
+    font-style: oblique;
+    text-decoration: none;
+    margin: 10px;
+    
+  }
+
+
+
+footer{
+    background-image:url("https://images7.alphacoders.com/126/1269711.jpg");
+    
+    background-position-y: 50%;
+    background-position: 50%;
+    height: 100px;
+    width: 98%;
+    padding: 20px;
+}
+  
 
 
 @keyframes fade-in {

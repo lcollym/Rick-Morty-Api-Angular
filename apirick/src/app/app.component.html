@@ -1,8 +1,18 @@
 
 
+
 <div>
-  <h1 class="title">Rick And morty API</h1>
-  <h5 class="title"> Luis R collymoore</h5>
+  <header>
+    <h1>Rick & Morthy API</h1>
+    <h5>Luis R collymoore</h5>
+
+  </header>
+  <nav>
+      
+    <a href="https://rickandmortyapi.com/" target="_blank">Doc API</a>
+    <a href="https://github.com/collym97"  target="_blank">Github</a>
+    <button (click)="loadPage()">characters</button>
+  </nav>
 
   <div class="container">
 
@@ -10,7 +20,7 @@
     @for (i of characters.results; track i) {
       <div>
         <h3>{{i.name}}</h3>
-        <img src="{{i.image}}">
+        <img class="chars" src="{{i.image}}">
         <h3>{{i.species}}</h3>
         <h3 *ngIf="i.status == 'Dead'" class="dead">Dead</h3>
         <h3 *ngIf="i.status == 'Alive'" class="alive">Alive</h3>
@@ -23,7 +33,11 @@
  
   </div>
  
-  <button type="button" (click)="loadPage()">Cargar página</button>
+  <button type="button" (click)="loadPage()">Load chars</button>
+  <footer id="footer">
+
+
+  </footer>
 </div>
 
 

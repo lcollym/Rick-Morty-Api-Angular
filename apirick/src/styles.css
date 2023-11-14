@@ -2,4 +2,7 @@
 body{
     background-color: rgb(0, 0, 0);
     color: rgb(255, 244, 244);
+    scroll-behavior: smooth;
+    scroll-behavior: auto;
+    overflow-y: scroll;
 }
