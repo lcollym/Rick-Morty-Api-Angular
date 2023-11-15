@@ -8,7 +8,8 @@ button{
     font-size: large;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    border-radius: 10%;
+    border-radius: 30%;
+    border-radius: 10cm;
 }
 
 
@@ -70,6 +71,7 @@ header {
     height: 250px;
     width: 98%;
     padding: 20px;
+
     
   }
   
@@ -77,11 +79,11 @@ header {
   
   nav {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     font-size:x-large;
     margin: 150px;
-    margin-top: 1%
-
+    margin-top: 1%;
+    margin-right:38%;
     
   }
   
@@ -124,11 +126,48 @@ footer{
   }
 
 @media (max-width: 844px) {
+
+  nav {
+
+    font-size:medium;
+    margin: 0px;
+    margin-top: 1%;
+    margin-right:20%;
+    display: inline;
+    
+  }
+
+  nav a {
+    color: #dad3d3;
+    text-decoration: none;
+    margin: 10px;
+  }
+
+ nav a:hover {
+    color:springgreen;
+    font-style: oblique;
+    text-decoration: none;
+    margin: 10px;
+    
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    left: 5%;
+    flex-flow: wrap;
+    animation-name: fade-in;
+    animation-duration:5s;
+    scroll-behavior: smooth;
+    font-size: medium;
+    
+
+}
     button{
         position: relative;
-        left: 33%;
-        bottom: -2%;
-        font-size: large;
+        left: 45%;
+    
+        font-size: medium;
         color: rgb(0, 0, 0);
         background-color: rgb(255, 255, 255);
         border-radius: 10%;

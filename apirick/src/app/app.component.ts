@@ -15,12 +15,13 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   characters: any;
-  counter = 0;
+  maxchar = 0;
+  minchar = 0;
   ngOnInit() {
     this.loadPage();
   }
 
-  loadPage(page: number = this.counter) {
+  loadPage(page: number = this.maxchar) {
     // Realizamos una solicitud GET a la página especificada
     this.http
       .get('https://rickandmortyapi.com/api/character?page=' + page)
@@ -35,7 +36,7 @@ export class AppComponent implements OnInit {
         }
       );
 
-    this.counter++;
-    console.log(this.counter);
+    this.maxchar++;
+    console.log(this.maxchar);
   }
 }
