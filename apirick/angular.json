@@ -84,7 +84,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "apirick/node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
             ],
             "scripts": []
           }

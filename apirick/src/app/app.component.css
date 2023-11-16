@@ -1,43 +1,74 @@
 body{
     scroll-behavior: smooth;
 }
-button{
-    position: relative;
-    left: 45%;
-    bottom: 1%;
-    font-size: large;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    border-radius: 30%;
-    border-radius: 10cm;
-}
 
-
-button:hover{
-    position: relative;
-    left: 45%;
-    bottom: -2%;
-    font-size: large;
-    color: rgb(0, 0, 0);
-    background-color: rgb(194, 255, 133);
-    border-radius: 10%;
-}
 .container{
     display: flex;
     justify-content: center;
-    padding: 10%;
+    padding: 5%;
     padding-top: 10px;
     position: relative;
     flex-flow: wrap;
     animation-name: fade-in;
     animation-duration:5s;
     scroll-behavior: smooth;
+    font-size: small;
+
+
+    
     
 
 }
+.hidden {
+  display: none;
+}
+.center{
+font-size: xx-large;
+height: 100%;
+margin: 10%;
+
+}
+
+.boton-derecho {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+  background-color:rgb(131, 175, 43);
+  color:rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.boton-izquierdo {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+  background-color:rgb(131, 175, 43);
+  color:rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.start{
+
+
+
+  z-index: 100;
+  background-color:rgb(131, 175, 43);
+  color:rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 50px;
+}
 h3{
+  position: relative;
     display: flex;
     justify-content: center;
+    left: -10%;
 }
 
 .dead{
@@ -53,6 +84,7 @@ h3{
     border-color: yellowgreen;
     border-style: solid;
     margin:10px;
+    width: 70%;
 }
 
 .chars:hover{
@@ -66,11 +98,12 @@ h3{
 
 header {
     
-    background-image:url("https://images.alphacoders.com/133/1330376.png");
-    background-position-y: 34%;
+    background-image:url("https://w0.peakpx.com/wallpaper/914/291/HD-wallpaper-rick-and-morty-on-the-run.jpg");
+    background-position-y: 5%;
     height: 250px;
-    width: 98%;
+    
     padding: 20px;
+    background-size: cover;
 
     
   }
@@ -78,12 +111,16 @@ header {
 
   
   nav {
-    display: flex;
-    justify-content: left;
-    font-size:x-large;
-    margin: 150px;
-    margin-top: 1%;
-    margin-right:38%;
+    /* display: flex; */
+    position: absolute;
+    justify-content: center;
+    font-size:larger;
+    /* margin: 10px; */
+    top: 2%;
+    left: 80%;
+    background-color: rgb(0, 0, 0);
+    /* border-radius: 1ch; */
+    
     
   }
   
@@ -104,15 +141,29 @@ header {
 
 
 footer{
-    background-image:url("https://images7.alphacoders.com/126/1269711.jpg");
-    
-    background-position-y: 50%;
-    background-position: 50%;
-    height: 100px;
-    width: 98%;
+    background-image:url("https://w0.peakpx.com/wallpaper/648/100/HD-wallpaper-tv-show-rick-and-morty-morty-smith-rick-sanchez.jpg");
+    background-size: cover;
+    background-position-y: 15%;
+
+    height: 220px;
+    width: 100%;
     padding: 20px;
+    opacity: 90%;
 }
   
+p{
+  display: flex;
+  justify-content: left;
+  font-size: medium;
+
+
+}
+
+#up{
+ position: relative;
+ left: 50%;
+ 
+}
 
 
 @keyframes fade-in {
@@ -125,51 +176,134 @@ footer{
     }
   }
 
-@media (max-width: 844px) {
+@media (max-width: 1024px) {
 
+    p{
+      display: flex;
+      justify-content: left;
+      font-size: medium;
+    
+    
+    }
+  header {
+    
+    background-image:url("https://w0.peakpx.com/wallpaper/914/291/HD-wallpaper-rick-and-morty-on-the-run.jpg");
+    background-position-y: 5%;
+
+   
+    background-size: cover;
+    /* max-width: 1024px */
+    
+
+    
+  }
+  footer{
+    background-image:url("https://w0.peakpx.com/wallpaper/648/100/HD-wallpaper-tv-show-rick-and-morty-morty-smith-rick-sanchez.jpg");
+    background-size: cover;
+    background-position-y: 15%;
+
+  
+    background-size: cover;
+    /* width: 116%; */
+
+    opacity: 90%;
+}
+  
   nav {
-
-    font-size:medium;
-    margin: 0px;
-    margin-top: 1%;
-    margin-right:20%;
-    display: inline;
     
-  }
+    position: relative;
+justify-content: center;
+  text-align: center;
+    font-size:larger;
+    /* margin: 10px; */
+    align-items: center;
+    left: -2%;
+    top: 89.5%;
+    /* left: 84%; */
+   
 
-  nav a {
-    color: #dad3d3;
-    text-decoration: none;
-    margin: 10px;
   }
+    
 
- nav a:hover {
-    color:springgreen;
-    font-style: oblique;
-    text-decoration: none;
-    margin: 10px;
-    
-  }
-  .container{
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    left: 5%;
-    flex-flow: wrap;
-    animation-name: fade-in;
-    animation-duration:5s;
-    scroll-behavior: smooth;
-    font-size: medium;
-    
+
+.chars{
+  border-radius: 50%;
+  border-color: yellowgreen;
+  border-style: solid;
+  margin:15px;
+  width: 70%;
+position: relative;
+left: 50px;
+
 
 }
-    button{
-        position: relative;
-        left: 45%;
-    
-        font-size: medium;
-        color: rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
-        border-radius: 10%;
-    }
+
+h3{
+  position: relative;
+    display: flex;
+    justify-content: center;
+    left: 10px;
+}
+
   }
+
+
+  @media (max-width: 425px) {
+    .center{
+      font-size: xx-large;
+      height: 100%;
+      margin: 50%;
+      
+      }
+      .active{
+        color: yellowgreen;
+      }
+      p{
+        display: flex;
+        justify-content: left;
+        font-size: medium;
+      
+      
+      }
+
+    
+    nav {
+      
+      position: relative;
+    justify-content: center;
+    text-align: center;
+      font-size:small;
+      /* margin: 10px; */
+      align-items: center;
+      left: 10px;
+      top: 89.5%;
+      /* left: 84%; */
+     
+  
+    }
+      
+  
+
+  
+  .chars{
+    border-radius: 50%;
+    border-color: yellowgreen;
+    border-style: solid;
+    margin:15px;
+    width: 50%;
+  position: relative;
+  left: 62px;
+  }
+  
+  h3{
+    position: relative;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      left: 10px;
+      font-size: medium;
+  }
+
+
+  
+    }
