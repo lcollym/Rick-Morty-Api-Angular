@@ -3,15 +3,17 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterLink, RouterLinkActive} from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule,HttpClientModule, RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [CommonModule,HttpClientModule, RouterOutlet, RouterLink],
+  
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
+
 export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {}
   isHidden = true;
@@ -19,6 +21,7 @@ export class AppComponent implements OnInit {
   pages:number = 3;
 
   ngOnInit() {
+    
     this.nextPage();
 
   }

@@ -32,7 +32,7 @@
   
   body {
     background-color: #222;
-
+  
     inset: 0;
     /* display: flex; */
     place-content: center;
@@ -46,5 +46,7 @@
 
   * {
     transition: all 0.25s ease-out;
+
+
   }
   

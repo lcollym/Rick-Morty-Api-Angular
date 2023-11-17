@@ -65,10 +65,11 @@ margin: 10%;
   font-size: 50px;
 }
 h3{
-  position: relative;
+    position: relative;
     display: flex;
     justify-content: center;
     left: -10%;
+    font-size: medium;
 }
 
 .dead{
@@ -307,3 +308,5 @@ h3{
 
   
     }
+
+    
