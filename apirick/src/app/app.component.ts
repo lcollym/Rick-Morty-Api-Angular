@@ -16,10 +16,11 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {}
   isHidden = true;
   characters: any;
-  pages = 2;
+  pages:number = 3;
 
   ngOnInit() {
-    this.loadPage();
+    this.nextPage();
+
   }
 
  async nextPage(page: number = this.pages) {
@@ -61,29 +62,9 @@ export class AppComponent implements OnInit {
     this.decrement()
 
   }
-  loadPage() {
-    // Realizamos una solicitud GET a la página especificada
-    this.http
-      .get('https://rickandmortyapi.com/api/character')
-      .subscribe(
-        (response: any) => {
-          // Actualizamos la lista de personajes con la respuesta de la API
-          this.characters = response;
-          console.log(response);
-        },
-        (error: any) => {
-          // Manejamos el error
-        }
-      );
-
-
-     
-  
-  }
-
 
   increment(){
-    this.pages++;
+    this.pages+=1;
     console.log(this.pages);
     if(this.pages >= 43){
       alert('There are no more characters :(')
@@ -93,9 +74,9 @@ export class AppComponent implements OnInit {
   }
 
   decrement(){
-    this.pages--;
+    this.pages-=1;
     console.log(this.pages);
-    if(this.pages <= 0){
+    if(this.pages <= 1){
       this.isHidden = true;
      
     }
