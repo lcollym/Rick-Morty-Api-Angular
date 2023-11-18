@@ -65,10 +65,9 @@ margin: 10%;
   font-size: 50px;
 }
 h3{
-    position: relative;
+  
     display: flex;
     justify-content: center;
-    left: -10%;
     font-size: medium;
 }
 
@@ -81,11 +80,14 @@ h3{
 }
      
 .chars{
+
     border-radius: 50%;
     border-color: yellowgreen;
     border-style: solid;
     margin:10px;
     width: 70%;
+    position: relative;
+    left: 40px;
 }
 
 .chars:hover{
@@ -226,7 +228,7 @@ justify-content: center;
   }
     
 
-
+/* 
 .chars{
   border-radius: 50%;
   border-color: yellowgreen;
@@ -237,14 +239,9 @@ position: relative;
 left: 50px;
 
 
-}
+} */
 
-h3{
-  position: relative;
-    display: flex;
-    justify-content: center;
-    left: 10px;
-}
+
 
   }
 
@@ -286,27 +283,8 @@ h3{
   
 
   
-  .chars{
-    border-radius: 50%;
-    border-color: yellowgreen;
-    border-style: solid;
-    margin:15px;
-    width: 50%;
-  position: relative;
-  left: 62px;
-  }
-  
-  h3{
-    position: relative;
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      left: 10px;
-      font-size: medium;
-  }
+
 
 
   
     }
-
-    
